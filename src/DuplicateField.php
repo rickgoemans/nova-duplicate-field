@@ -14,7 +14,10 @@ class DuplicateField extends Field
      */
     public $component = 'duplicate-field';
 
-    public function __construct(string $name, ? string $attribute = null, ? mixed $resolveCallback = null)
+    /**
+     * @inheritdoc 
+     */
+    public function __construct($name, $attribute = null, callable $resolveCallback = null)
     {
         parent::__construct(null, null, null);
 
